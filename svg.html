@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .svg0 {
+            border: 1px solid blue;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            width: 400px;
+            height: 200px;
+        }
+
+        .headerQ {
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-top: -10px;
+        }
+    </style>
+
+</head>
+<body>
+    <svg viewbox='0 0 400 200' class='svg0'>
+       <ellipse cx='200' cy='100' rx='190' ry='90' 
+            fill='blue'/>
+        <circle cx='200' cy='100' r='10' 
+            fill='yellow'/>
+    </svg>
+
+    <section>
+        <div>
+            <h1>
+                Research
+            </h1>
+        </div>
+        <div>
+            <h1 class="headerQ">What is a viewbox?</h1>
+            <p class="pQ">Viewboxen er den boks, hvori man kan styre placeringen(koordinaterne) af SVG'en. </p>
+        </div>
+        <div>
+            <h2 class="headerQ">What is a viewport?</h2>
+            <p class="pQ">Viewport styrer det rum SVG'en bliver vist i. SVG'en kan derfor principielt være meget større <br> end viewporten
+            og der vises derfor kun en del af SVG'en, hvis det er tilfældet.</p>
+        </div>
+        <div>
+            <h3 class="headerQ">How do they relate to each other?</h3>
+            <p class="pQ">Viewport styrer hvor stort et rum SVG'en har til at blive vist i, viewbox styrer hvordan det skal ses, og hvor i viewporten det skal ses.</p>
+        </div>
+        <div>
+            <h4 class="headerQ">How to scale an SVG drawing's appearance on a web page?</h4>
+            <p class="pQ">At sætte height eller width til auto i css'en til SVG-elementet. Det får den til at scale automatisk til det,
+                den bliver vist i, som jeg lige husker det. 
+            </p>
+        </div>
+
+    </section>
+
+</body>
+</html>
